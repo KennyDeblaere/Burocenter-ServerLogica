@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DBburocenter" Class="ProjectBurocenterDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=87.238.167.81;Initial Catalog=DBburocenter;Persist Security Info=True;User ID=projectburocenter" SettingsObjectName="ServerLogica.Properties.Settings" SettingsPropertyName="DBburocenterConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Artikel" Member="Artikels">
+    <Type Name="Artikel">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="omschrijving" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="barcode" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Association Name="Artikel_Verbruikartikel" Member="Verbruikartikel" ThisKey="id" OtherKey="artikelid" Type="Verbruikartikel" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bedrijf" Member="Bedrijfs">
+    <Type Name="Bedrijf">
+      <Column Name="bedrijfsid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="btwnr" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="bedrijfsnaam" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="naamcode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="straatnaam" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nummer" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="stadid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Bedrijf_Bedrijf_Contact" Member="Bedrijf_Contacts" ThisKey="bedrijfsid" OtherKey="bedrijfsid" Type="Bedrijf_Contact" />
+      <Association Name="Bedrijf_Opdracht" Member="Opdrachts" ThisKey="bedrijfsid" OtherKey="klantid" Type="Opdracht" />
+      <Association Name="Stad_Bedrijf" Member="Stad" ThisKey="bedrijfsid" OtherKey="stadid" Type="Stad" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bedrijf_Contact" Member="Bedrijf_Contacts">
+    <Type Name="Bedrijf_Contact">
+      <Column Name="bedrijfsid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="contactid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Bedrijf_Bedrijf_Contact" Member="Bedrijf" ThisKey="bedrijfsid" OtherKey="bedrijfsid" Type="Bedrijf" IsForeignKey="true" />
+      <Association Name="Contactpersoon_Bedrijf_Contact" Member="Contactpersoon" ThisKey="contactid" OtherKey="persoonid" Type="Contactpersoon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contactpersoon" Member="Contactpersoons">
+    <Type Name="Contactpersoon">
+      <Column Name="persoonid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="fax" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="gsm" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="telefoonwerk" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="telefoonprive" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="voornaam" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="familienaam" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="actief" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Contactpersoon_Bedrijf_Contact" Member="Bedrijf_Contacts" ThisKey="persoonid" OtherKey="contactid" Type="Bedrijf_Contact" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Hoofdligplaats" Member="Hoofdligplaats">
+    <Type Name="Hoofdligplaat">
+      <Column Name="hoofdligplaats" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ligplaats" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Ligplaat_Hoofdligplaat" Member="Ligplaat" ThisKey="hoofdligplaats" OtherKey="ligplaatsid" Type="Ligplaat" IsForeignKey="true" />
+      <Association Name="Ligplaat_Hoofdligplaat1" Member="Ligplaat1" ThisKey="ligplaats" OtherKey="ligplaatsid" Type="Ligplaat" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ligplaats" Member="Ligplaats">
+    <Type Name="Ligplaat">
+      <Column Name="ligplaatsid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="omschrijving" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="verantwoordelijkeid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Ligplaat_Hoofdligplaat" Member="Hoofdligplaats" ThisKey="ligplaatsid" OtherKey="hoofdligplaats" Type="Hoofdligplaat" />
+      <Association Name="Ligplaat_Hoofdligplaat1" Member="Hoofdligplaats1" ThisKey="ligplaatsid" OtherKey="ligplaats" Type="Hoofdligplaat" />
+      <Association Name="Ligplaat_Verbruik_Ligplaat" Member="Verbruik_Ligplaats" ThisKey="ligplaatsid" OtherKey="ligplaatsid" Type="Verbruik_Ligplaat" />
+      <Association Name="Werknemer_Ligplaat" Member="Werknemer" ThisKey="verantwoordelijkeid" OtherKey="medewerkerid" Type="Werknemer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Opdracht" Member="Opdrachts">
+    <Type Name="Opdracht">
+      <Column Name="opdrachtid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="locatie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="handtekening" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="afgewerkt" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="klantid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="omschrijving" Type="System.String" DbType="VarChar(160)" CanBeNull="true" />
+      <Association Name="Opdracht_Opdracht_Werknemer" Member="Opdracht_Werknemers" ThisKey="opdrachtid" OtherKey="opdrachtid" Type="Opdracht_Werknemer" />
+      <Association Name="Opdracht_Prestatie" Member="Prestaties" ThisKey="opdrachtid" OtherKey="opdrachtid" Type="Prestatie" />
+      <Association Name="Opdracht_Verbruikartikel" Member="Verbruikartikels" ThisKey="opdrachtid" OtherKey="opdrachtid" Type="Verbruikartikel" />
+      <Association Name="Bedrijf_Opdracht" Member="Bedrijf" ThisKey="klantid" OtherKey="bedrijfsid" Type="Bedrijf" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Opdracht_Werknemer" Member="Opdracht_Werknemers">
+    <Type Name="Opdracht_Werknemer">
+      <Column Name="opdrachtid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="werknemerid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Opdracht_Opdracht_Werknemer" Member="Opdracht" ThisKey="opdrachtid" OtherKey="opdrachtid" Type="Opdracht" IsForeignKey="true" />
+      <Association Name="Werknemer_Opdracht_Werknemer" Member="Werknemer" ThisKey="werknemerid" OtherKey="medewerkerid" Type="Werknemer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Prestatie" Member="Prestaties">
+    <Type Name="Prestatie">
+      <Column Name="prestatieid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="aanvang" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="duur" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="opdrachtid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="prestatiesoortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Opdracht_Prestatie" Member="Opdracht" ThisKey="opdrachtid" OtherKey="opdrachtid" Type="Opdracht" IsForeignKey="true" />
+      <Association Name="Prestatiesoort_Prestatie" Member="Prestatiesoort" ThisKey="prestatiesoortid" OtherKey="prestatieid" Type="Prestatiesoort" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Prestatiesoort" Member="Prestatiesoorts">
+    <Type Name="Prestatiesoort">
+      <Column Name="prestatieid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="omschrijving" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Prestatiesoort_Prestatie" Member="Prestaties" ThisKey="prestatieid" OtherKey="prestatiesoortid" Type="Prestatie" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Stad" Member="Stads">
+    <Type Name="Stad">
+      <Column Name="stadid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="postcode" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="stad" Member="stad1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Stad_Bedrijf" Member="Bedrijf" ThisKey="stadid" OtherKey="bedrijfsid" Type="Bedrijf" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Verbruik_Ligplaats" Member="Verbruik_Ligplaats">
+    <Type Name="Verbruik_Ligplaat">
+      <Column Name="artikelid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ligplaatsid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="aantalStock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="minStock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="maxStock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Ligplaat_Verbruik_Ligplaat" Member="Ligplaat" ThisKey="ligplaatsid" OtherKey="ligplaatsid" Type="Ligplaat" IsForeignKey="true" />
+      <Association Name="Verbruikartikel_Verbruik_Ligplaat" Member="Verbruikartikel" ThisKey="artikelid" OtherKey="artikelid" Type="Verbruikartikel" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Verbruikartikel" Member="Verbruikartikels">
+    <Type Name="Verbruikartikel">
+      <Column Name="artikelid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="aantalGebruikt" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="opdrachtid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Verbruikartikel_Verbruik_Ligplaat" Member="Verbruik_Ligplaats" ThisKey="artikelid" OtherKey="artikelid" Type="Verbruik_Ligplaat" />
+      <Association Name="Artikel_Verbruikartikel" Member="Artikel" ThisKey="artikelid" OtherKey="id" Type="Artikel" IsForeignKey="true" />
+      <Association Name="Opdracht_Verbruikartikel" Member="Opdracht" ThisKey="opdrachtid" OtherKey="opdrachtid" Type="Opdracht" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Werknemer" Member="Werknemers">
+    <Type Name="Werknemer">
+      <Column Name="medewerkerid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="naam" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="voornaam" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="passwoord" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="actief" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="emailadres" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+      <Association Name="Werknemer_Ligplaat" Member="Ligplaats" ThisKey="medewerkerid" OtherKey="verantwoordelijkeid" Type="Ligplaat" />
+      <Association Name="Werknemer_Opdracht_Werknemer" Member="Opdracht_Werknemers" ThisKey="medewerkerid" OtherKey="werknemerid" Type="Opdracht_Werknemer" />
+    </Type>
+  </Table>
+  <Table Name="zumero.[log]" Member="logs">
+    <Type Name="log">
+      <Column Name="logid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="url" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="unix_time" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ip_address" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="request_size" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="response_size" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="elapsed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

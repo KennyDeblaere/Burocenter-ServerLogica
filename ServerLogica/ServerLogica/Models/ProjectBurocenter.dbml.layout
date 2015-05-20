@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14, 15.25" name="ProjectBurocenter">
+  <DataContextMoniker Name="/ProjectBurocenterDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1d35a43e-ced1-46cf-93d8-f0d388af5775" absoluteBounds="6.25, 2.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Artikel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57087600-2c61-4fd8-8532-f481607a953d" absoluteBounds="6.265, 2.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c58a0b1f-4df7-4adf-9df2-1f1c7168d537" absoluteBounds="3.5, 5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Bedrijf" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f24f7e3b-02c6-4e51-be5c-da71eaed2faf" absoluteBounds="3.515, 5.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a18411cb-5c03-48b7-903e-2dd4e7e778f9" absoluteBounds="6.25, 4.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Bedrijf_Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="852c867b-24cd-4489-a716-74b60161d807" absoluteBounds="6.265, 4.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c9a023ea-9772-42e9-8060-19da95fe6043" absoluteBounds="3.5, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Contactpersoon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="403fa3c1-964b-4960-b7b2-058b2b877768" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29f5f503-6193-46c8-9f09-ab955a6f6088" absoluteBounds="11.75, 13.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Hoofdligplaat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c40dc87e-1875-4834-9b25-48708a46b454" absoluteBounds="11.765, 13.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5479fcb5-0e45-45e4-8586-14cd711f637c" absoluteBounds="9, 13.25, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Ligplaat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4280a13-3ba1-4282-b549-41838bf72111" absoluteBounds="9.015, 13.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="17a68020-12ee-4f4c-8b7c-9c4b43be22a9" absoluteBounds="6.25, 7, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Opdracht" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff7eeaa2-5c33-4a4a-91e2-ee233d2bd9c6" absoluteBounds="6.265, 7.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="063b43fe-520d-4547-8659-f18b41be2724" absoluteBounds="9, 7.25, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Opdracht_Werknemer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45baac1f-70ce-4ebf-a294-3170896f0665" absoluteBounds="9.015, 7.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="123d6092-11d3-469e-a112-9b2a4b7493d7" absoluteBounds="9, 10.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Prestatie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bdb6100c-c5b5-4409-9ecb-3a961f6bc8da" absoluteBounds="9.015, 10.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3758a1ac-24df-4f1c-83c7-e63ac8935ece" absoluteBounds="6.25, 10.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Prestatiesoort" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ee25d02-1e01-4c83-b3ff-ca3858e9d0dd" absoluteBounds="6.265, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="adfa016b-c0cd-432a-9f68-3daab213bdba" absoluteBounds="0.75, 5.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Stad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6435f365-113b-4471-93ab-53b3ece68a58" absoluteBounds="0.765, 5.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="050f8671-bf25-449f-b7c5-dcb0a7aaa8f3" absoluteBounds="11.75, 4.125, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Verbruik_Ligplaat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="381b7aad-8228-49bf-92de-a712ba430c3b" absoluteBounds="11.765, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="65b27fdf-1cac-48e8-a1ad-91a70cec4aac" absoluteBounds="9, 4.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Verbruikartikel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2986f2dc-1789-48bc-94d9-7b49fb593421" absoluteBounds="9.015, 4.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3387ce7-d4c6-44b4-80b3-5b116c101522" absoluteBounds="6.25, 13, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/Werknemer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d187644-a0d8-4dc3-a2e9-71cfcae8f194" absoluteBounds="6.265, 13.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e9a651a-27a4-4ab6-a63c-4c03da8fa248" absoluteBounds="0.75, 8.375, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/ProjectBurocenterDataContext/log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c0b9d28-9396-4029-8958-c8be7f4efd17" absoluteBounds="0.765, 8.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.28449625651042); (6.25 : 5.28449625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Bedrijf/Bedrijf_Bedrijf_Contact" />
+      <nodes>
+        <classShapeMoniker Id="c58a0b1f-4df7-4adf-9df2-1f1c7168d537" />
+        <classShapeMoniker Id="a18411cb-5c03-48b7-903e-2dd4e7e778f9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.28856307752404); (5.875 : 3.66356307752404); (5.875 : 4.79849612825521); (6.25 : 4.79849612825521)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Contactpersoon/Contactpersoon_Bedrijf_Contact" />
+      <nodes>
+        <classShapeMoniker Id="c9a023ea-9772-42e9-8060-19da95fe6043" />
+        <classShapeMoniker Id="a18411cb-5c03-48b7-903e-2dd4e7e778f9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 13.9719962565104); (11.75 : 13.9719962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Ligplaat/Ligplaat_Hoofdligplaat" />
+      <nodes>
+        <classShapeMoniker Id="5479fcb5-0e45-45e4-8586-14cd711f637c" />
+        <classShapeMoniker Id="29f5f503-6193-46c8-9f09-ab955a6f6088" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 13.6109981282552); (11.75 : 13.6109981282552)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Ligplaat/Ligplaat_Hoofdligplaat1" />
+      <nodes>
+        <classShapeMoniker Id="5479fcb5-0e45-45e4-8586-14cd711f637c" />
+        <classShapeMoniker Id="29f5f503-6193-46c8-9f09-ab955a6f6088" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 7.15549967447917); (4.5 : 8.05934945833333); (6.25 : 8.05934945833333)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Bedrijf/Bedrijf_Opdracht" />
+      <nodes>
+        <classShapeMoniker Id="c58a0b1f-4df7-4adf-9df2-1f1c7168d537" />
+        <classShapeMoniker Id="17a68020-12ee-4f4c-8b7c-9c4b43be22a9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.94314697265625); (9 : 7.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Opdracht/Opdracht_Opdracht_Werknemer" />
+      <nodes>
+        <classShapeMoniker Id="17a68020-12ee-4f4c-8b7c-9c4b43be22a9" />
+        <classShapeMoniker Id="063b43fe-520d-4547-8659-f18b41be2724" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 8.9631982421875); (8.625 : 9.3381982421875); (8.625 : 11.0104484049479); (8.72916666666667 : 11.0104484049479 : JumpStart); (8.89583333333333 : 11.0104484049479 : JumpEnd); (9 : 11.0104484049479)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Opdracht/Opdracht_Prestatie" />
+      <nodes>
+        <classShapeMoniker Id="17a68020-12ee-4f4c-8b7c-9c4b43be22a9" />
+        <classShapeMoniker Id="123d6092-11d3-469e-a112-9b2a4b7493d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 10.630224202474); (8.54166666666667 : 10.630224202474 : JumpStart); (8.70833333333333 : 10.630224202474 : JumpEnd); (8.72916666666667 : 10.630224202474 : JumpStart); (8.89583333333333 : 10.630224202474 : JumpEnd); (9 : 10.630224202474)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Prestatiesoort/Prestatiesoort_Prestatie" />
+      <nodes>
+        <classShapeMoniker Id="3758a1ac-24df-4f1c-83c7-e63ac8935ece" />
+        <classShapeMoniker Id="123d6092-11d3-469e-a112-9b2a4b7493d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.06814697265625); (3.5 : 6.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Stad/Stad_Bedrijf" />
+      <nodes>
+        <classShapeMoniker Id="adfa016b-c0cd-432a-9f68-3daab213bdba" />
+        <classShapeMoniker Id="c58a0b1f-4df7-4adf-9df2-1f1c7168d537" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 13.25); (11.375 : 12.875); (11.375 : 5.01044840494792); (11.75 : 5.01044840494792)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Ligplaat/Ligplaat_Verbruik_Ligplaat" />
+      <nodes>
+        <classShapeMoniker Id="5479fcb5-0e45-45e4-8586-14cd711f637c" />
+        <classShapeMoniker Id="050f8671-bf25-449f-b7c5-dcb0a7aaa8f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 4.56772420247396); (11.75 : 4.56772420247396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Verbruikartikel/Verbruikartikel_Verbruik_Ligplaat" />
+      <nodes>
+        <classShapeMoniker Id="65b27fdf-1cac-48e8-a1ad-91a70cec4aac" />
+        <classShapeMoniker Id="050f8671-bf25-449f-b7c5-dcb0a7aaa8f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.94314697265625); (10 : 2.94314697265625); (10 : 4.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Artikel/Artikel_Verbruikartikel" />
+      <nodes>
+        <classShapeMoniker Id="1d35a43e-ced1-46cf-93d8-f0d388af5775" />
+        <classShapeMoniker Id="65b27fdf-1cac-48e8-a1ad-91a70cec4aac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.00150915249399); (8.625 : 6.62650915249399); (8.625 : 4.94314697265625); (9 : 4.94314697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Opdracht/Opdracht_Verbruikartikel" />
+      <nodes>
+        <classShapeMoniker Id="17a68020-12ee-4f4c-8b7c-9c4b43be22a9" />
+        <classShapeMoniker Id="65b27fdf-1cac-48e8-a1ad-91a70cec4aac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 13.9431469726562); (9 : 13.9431469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Werknemer/Werknemer_Ligplaat" />
+      <nodes>
+        <classShapeMoniker Id="b3387ce7-d4c6-44b4-80b3-5b116c101522" />
+        <classShapeMoniker Id="5479fcb5-0e45-45e4-8586-14cd711f637c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 13.0619152522536); (8.8125 : 12.4994152522536); (8.8125 : 8.32097245898438); (9 : 8.32097245898438)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ProjectBurocenterDataContext/Werknemer/Werknemer_Opdracht_Werknemer" />
+      <nodes>
+        <classShapeMoniker Id="b3387ce7-d4c6-44b4-80b3-5b116c101522" />
+        <classShapeMoniker Id="063b43fe-520d-4547-8659-f18b41be2724" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

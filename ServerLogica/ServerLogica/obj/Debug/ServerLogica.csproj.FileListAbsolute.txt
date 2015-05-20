@@ -1,0 +1,10 @@
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\bin\Debug\ServerLogica.exe.config
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\bin\Debug\ServerLogica.exe
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\bin\Debug\ServerLogica.pdb
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\obj\Debug\ServerLogica.csprojResolveAssemblyReference.cache
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\obj\Debug\ServerLogica.FrmMain.resources
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\obj\Debug\ServerLogica.Properties.Resources.resources
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\obj\Debug\ServerLogica.csproj.GenerateResource.Cache
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\obj\Debug\ServerLogica.exe
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\obj\Debug\ServerLogica.pdb
+C:\Users\Kenny\Documents\School\2014-2015\Semester IV\Programmeerproject\ServerLogica\ServerLogica\bin\Debug\itextsharp.dll
